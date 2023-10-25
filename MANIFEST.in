@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include packhouse *.css
+recursive-include packhouse *.csv
+recursive-include packhouse *.html
+recursive-include packhouse *.ico
+recursive-include packhouse *.js
+recursive-include packhouse *.json
+recursive-include packhouse *.md
+recursive-include packhouse *.png
+recursive-include packhouse *.py
+recursive-include packhouse *.svg
+recursive-include packhouse *.txt
+recursive-exclude packhouse *.pyc
