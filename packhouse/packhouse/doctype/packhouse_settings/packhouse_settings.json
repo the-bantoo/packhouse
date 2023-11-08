@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "creation": "2023-10-25 18:50:20.109411",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_krypb",
+  "selling_stock_settings_section",
+  "default_warehouse_first",
+  "section_break_18a8r",
+  "lookup_warehouses",
+  "column_break_cx9hw",
+  "excluded_warehouses",
+  "selling_settings_section",
+  "active_partners",
+  "comm_journals",
+  "jv_warning",
+  "column_break_z1imu",
+  "sales_commission_section",
+  "commission_account",
+  "column_break_u5xm9",
+  "commission_cost_center"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_krypb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "selling_stock_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Selling Stock Settings"
+  },
+  {
+   "default": "0",
+   "fieldname": "default_warehouse_first",
+   "fieldtype": "Check",
+   "label": "Prioritise Item Default Warehouse On Sales Transactions"
+  },
+  {
+   "fieldname": "section_break_18a8r",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "description": "Only check stock levels in these warehouses when making orders",
+   "fieldname": "lookup_warehouses",
+   "fieldtype": "Table MultiSelect",
+   "label": "Stock Balance Lookup Warehouses",
+   "options": "Warehouses"
+  },
+  {
+   "fieldname": "column_break_cx9hw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Selected warehouses will not be used in sales transactions",
+   "fieldname": "excluded_warehouses",
+   "fieldtype": "Table MultiSelect",
+   "label": "Excluded Warehouses",
+   "options": "Warehouses"
+  },
+  {
+   "fieldname": "selling_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Selling Settings"
+  },
+  {
+   "fieldname": "column_break_z1imu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sales_commission_section",
+   "fieldtype": "Section Break",
+   "label": "Sales Commission"
+  },
+  {
+   "fieldname": "commission_account",
+   "fieldtype": "Link",
+   "label": "Commission Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_u5xm9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commission_cost_center",
+   "fieldtype": "Link",
+   "label": "Commission Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "active_partners",
+   "fieldtype": "Table MultiSelect",
+   "label": "Active Partners",
+   "options": "Partner"
+  },
+  {
+   "default": "0",
+   "fieldname": "comm_journals",
+   "fieldtype": "Check",
+   "label": "Automate Commission Journal Entries for Active Partners"
+  },
+  {
+   "default": "1",
+   "fieldname": "jv_warning",
+   "fieldtype": "Check",
+   "label": "Warn when Sales Partner is not in Active Partners"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-10-25 20:47:22.690265",
+ "modified_by": "Administrator",
+ "module": "Packhouse",
+ "name": "Packhouse Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
